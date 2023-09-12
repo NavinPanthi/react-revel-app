@@ -1,4 +1,5 @@
 import Banner from "./Banner";
+import Details from "./Details";
 const Main = () => {
   return (
     <div className="mx-3">
@@ -6,6 +7,7 @@ const Main = () => {
         <span className="text-ppurple ">Events </span>/ Taylor Swift in Nepal
       </div>
       <Banner />
+      <Details />
     </div>
   );
 };

@@ -4,7 +4,7 @@ import calendar from "../assets/images/calendar.png";
 import location from "../assets/images/location.png";
 const Banner = () => {
   return (
-    <div className="h-[310px] overflow-hidden relative my-3 bg-white">
+    <div className="h-[310px] overflow-hidden relative my-1 bg-white">
       <img src={tailor} alt="singer tailor" className="rounded-xl px-1" />
       <div className="h-[175px] absolute top-32  left-1 right-1 w-[97.5%] rounded-xl bg-white  p-2  bs ">
         <div className="text-xl flex items-center justify-between ">
