@@ -2,6 +2,7 @@ import tailor from "../assets/images/tailor.jpg";
 import share from "../assets/images/share.png";
 import calendar from "../assets/images/calendar.png";
 import location from "../assets/images/location.png";
+
 const Banner = () => {
   return (
     <div className="h-[310px] overflow-hidden relative my-1 bg-white">
