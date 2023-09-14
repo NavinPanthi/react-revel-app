@@ -1,4 +1,3 @@
-import swift from "../assets/images/swift.png";
 import {
   Accordion,
   AccordionItem,
@@ -11,17 +10,9 @@ import { FaAngleDown } from "react-icons/fa6";
 import { FaAngleUp } from "react-icons/fa6";
 import { useState } from "react";
 
-const Artists = () => {
+const About = () => {
   const [angleDown, setAngleDown] = useState(false);
 
-  const lists = [
-    { id: 1, name: "Touka", title: "singer", image: swift },
-    { id: 2, name: "Adarsha", title: "Comedian", image: swift },
-    { id: 3, name: "Tailor Swift", title: "singer", image: swift },
-    { id: 4, name: "Harry Styles", title: "singer", image: swift },
-    { id: 5, name: "Sabin rai", title: "singer", image: swift },
-    { id: 6, name: "Sajjan raj", title: "singer", image: swift },
-  ];
   const p = {
     className: "text-ppurple mr-1",
     size: "1.2em",
@@ -37,7 +28,7 @@ const Artists = () => {
                 className="text-sm font-semibold flex items-center justify-between"
                 onClick={() => setAngleDown(!angleDown)}
               >
-                <p>Artists</p>
+                <p>Terms and Conditions</p>
                 {angleDown ? (
                   <FaAngleDown {...p} className="text-black" />
                 ) : (
@@ -46,28 +37,14 @@ const Artists = () => {
               </div>
             </AccordionItemButton>
           </AccordionItemHeading>
-
           <AccordionItemPanel>
-            <ul className=" mt-1 text-xs flex flex-row gap-y-2 mb-2 overflow-x-scroll ">
-              {lists.map((artist) => (
-                <li
-                  key={artist.id}
-                  className="flex flex-col h-[108px] justify-center items-center p-1"
-                >
-                  <div className="w-[76px] h-[76px] ">
-                    <img
-                      src={artist?.image}
-                      alt="artist"
-                      className="rounded-full"
-                    />
-                  </div>
-                  <span>{artist?.name}</span>
-                  <span className="text-[11px] text-pgray">
-                    {artist?.title}
-                  </span>
-                </li>
-              ))}
-            </ul>
+            <ol className="mt-1 text-xs flex flex-col  mb-2">
+              <li> Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+              <li> sit amet consectetur adipisicing elit</li>
+              <li> adipisicing elit</li>
+              <li> psum dolor sit amet consectetur adipisicing elit</li>
+              <li> Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+            </ol>
           </AccordionItemPanel>
         </AccordionItem>
       </Accordion>
@@ -75,4 +52,4 @@ const Artists = () => {
   );
 };
 
-export default Artists;
+export default About;

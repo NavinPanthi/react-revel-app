@@ -73,7 +73,10 @@ const MoreInfo = () => {
         </p>
         <div className="flex flex-row items-center justify-between my-1">
           <div className="w-1/2">
-            <AiFillLike {...p} />
+            <div className="flex items-center">
+              <AiFillLike {...p} />
+              <span className="text-xs">500</span>
+            </div>
             <p className="text-[11px] pt-1 text-pgray">
               People who have shown interested recently.
             </p>

@@ -4,6 +4,7 @@ import About from "./About";
 import Gallery from "./Gallery";
 import Video from "./Video";
 import Terms from "./Terms";
+import Follow from "./Follow";
 const Details = () => {
   return (
     <div className=" my-1 bs mx-1 rounded-xl">
@@ -13,6 +14,7 @@ const Details = () => {
       <Gallery />
       <Video />
       <Terms />
+      <Follow />
     </div>
   );
 };

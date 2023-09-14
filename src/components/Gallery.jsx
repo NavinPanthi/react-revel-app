@@ -40,7 +40,7 @@ const Artists = () => {
                 className="text-sm font-semibold flex items-center justify-between"
                 onClick={() => setAngleDown(!angleDown)}
               >
-                <p>Gallery</p>
+                <p>Gallery (5)</p>
                 {angleDown ? (
                   <FaAngleDown {...p} className="text-black" />
                 ) : (
