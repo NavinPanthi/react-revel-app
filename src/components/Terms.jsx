@@ -48,14 +48,23 @@ const Artists = () => {
           </AccordionItemHeading>
 
           <AccordionItemPanel>
-            <ul className=" mt-1 text-xs flex flex-row gap-y-2 mb-2 overflow-x-scroll "> 
+            <ul className=" mt-1 text-xs flex flex-row gap-y-2 mb-2 overflow-x-scroll ">
               {lists.map((artist) => (
-                <li key={artist.id} className="flex flex-col h-[108px] justify-center items-center p-1">
+                <li
+                  key={artist.id}
+                  className="flex flex-col h-[108px] justify-center items-center p-1"
+                >
                   <div className="w-[76px] h-[76px] ">
-                    <img src={artist?.image} alt="artist" className="rounded-full" />
+                    <img
+                      src={artist?.image}
+                      alt="artist"
+                      className="rounded-full"
+                    />
                   </div>
-                  <span >{artist?.name}</span>
-                  <span className="text-[11px] text-pgray">{artist?.title}</span>
+                  <span>{artist?.name}</span>
+                  <span className="text-[11px] text-pgray">
+                    {artist?.title}
+                  </span>
                 </li>
               ))}
             </ul>
