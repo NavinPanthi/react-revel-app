@@ -17,7 +17,14 @@ import { useState } from "react";
 
 const Artists = () => {
   const [angleDown, setAngleDown] = useState(false);
-  const gallery = { swift, adarsh, sabin, sajan, harry };
+
+  const gallery = [
+    { id: 1, image: swift },
+    { id: 2, image: adarsh },
+    { id: 3, image: sabin },
+    { id: 4, image: sajan },
+    { id: 5, image: harry },
+  ];
   const p = {
     className: "text-ppurple mr-1",
     size: "1.2em",
@@ -44,14 +51,16 @@ const Artists = () => {
           </AccordionItemHeading>
 
           <AccordionItemPanel>
-            <ul className=" mt-1 text-xs flex flex-row gap-y-2 mb-2 overflow-x-scroll">
-              {Object.values(gallery).map((image, index) => (
-                <li key={index} className="p-1 ">
-                  <img
-                    className="rounded-lg w-[72] h-36"
-                    src={image}
-                    alt="singer"
-                  />
+            <ul className=" mt-1 text-xs flex flex-row gap-y-2 mb-2 overflow-x-scroll overflow-y-hidden">
+              {gallery.map((image, index) => (
+                <li key={index} className="flex flex-row p-1">
+                  <div className="w-60 h-48">
+                    <img
+                      className="rounded-lg w-60 h-48"
+                      src={image.image}
+                      alt="singer"
+                    />
+                  </div>
                 </li>
               ))}
             </ul>
